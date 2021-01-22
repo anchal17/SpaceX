@@ -26,6 +26,20 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div>
+                        <div class="filter-launch">Successful Landing</div>
+                        <hr>
+                        <div class="main-row">
+                            <div *ngFor="let success of launchData" class="w-50">
+                                <div *ngFor="let successData of success.rocket.first_stage.cores">
+                                    <div class="button">{{successData.land_success}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
         <div class="w-80">
@@ -61,118 +75,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="w-25">
-                <div class="content-top">
-                    <div class="content-main">
-                        <img class="img-center" src="./assets/flower.jpg">
-                    </div>
-                    <div class="content-body">
-                        <div>
-                            <h4>Falcon Set 1</h4>
-                            <label>Mission Ids</label><span>
-                                <ul>
-                                    <li>test</li>
-                                    <li>tea</li>
-                                    <li>coffee</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div>
-                            <label>Launch Year: </label><span>2006</span>
-                        </div>
-                    </div>
-                    <div>
-                        <label>Successful Launch:</label><span>False</span>
-                    </div>
-                    <div>
-                        <label>Successful Landing: </label><span>Launch Landing</span>
-                    </div>
-                </div>
-            </div>
-            <div class="w-25">
-                <div class="content-top">
-                    <div class="content-main">
-                        <img class="img-center" src="./assets/flower.jpg">
-                    </div>
-                    <div class="content-body">
-                        <div>
-                            <h4>Falcon Set 1</h4>
-                            <label>Mission Ids</label><span>
-                                <ul>
-                                    <li>test</li>
-                                    <li>tea</li>
-                                    <li>coffee</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div>
-                            <label>Launch Year: </label><span>2006</span>
-                        </div>
-                    </div>
-                    <div>
-                        <label>Successful Launch:</label><span>False</span>
-                    </div>
-                    <div>
-                        <label>Successful Landing: </label><span>Launch Landing</span>
-                    </div>
-                </div>
-            </div>
-            <div class="w-25">
-                <div class="content-top">
-                    <div class="content-main">
-                        <img class="img-center" src="./assets/flower.jpg">
-                    </div>
-                    <div class="content-body">
-                        <div>
-                            <h4>Falcon Set 1</h4>
-                            <label>Mission Ids</label><span>
-                                <ul>
-                                    <li>test</li>
-                                    <li>tea</li>
-                                    <li>coffee</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div>
-                            <label>Launch Year: </label><span>2006</span>
-                        </div>
-                    </div>
-                    <div>
-                        <label>Successful Launch:</label><span>False</span>
-                    </div>
-                    <div>
-                        <label>Successful Landing: </label><span>Launch Landing</span>
-                    </div>
-                </div>
-            </div>
-            <div class="w-25">
-                <div class="content-top">
-                    <div class="content-main">
-                        <img class="img-center" src="./assets/flower.jpg">
-                    </div>
-                    <div class="content-body">
-                        <div>
-                            <h4>Falcon Set 1</h4>
-                            <label>Mission Ids</label><span>
-                                <ul>
-                                    <li>test</li>
-                                    <li>tea</li>
-                                    <li>coffee</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div>
-                            <label>Launch Year: </label><span>2006</span>
-                        </div>
-                    </div>
-                    <div>
-                        <label>Successful Launch:</label><span>False</span>
-                    </div>
-                    <div>
-                        <label>Successful Landing: </label><span>Launch Landing</span>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </div>
