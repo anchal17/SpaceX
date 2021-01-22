@@ -2,14 +2,14 @@
     <h3>SpaceX Launch Programs</h3>
     <div class="content">
         <div class="w-20">
-            <div class="filter-outer">
+            <div  class="filter-outer">
                 <div class="filter">Filters</div>
                 <div>
                     <div>
                         <div class="filter-launch">Launch Year</div>
                         <hr>
-                        <div *ngFor="let filter of launchData" class="filter-panel-nav">
-                            <div class="w-50">
+                        <div class="main-row">
+                            <div *ngFor="let filter of launchData" class="w-50">
                                 <div class="button">{{filter.launch_year}}</div>
                             </div>
                         </div>
@@ -17,14 +17,11 @@
                 </div>
                 <div>
                     <div>
-                        <div class="filter-launch">Launch Year</div>
+                        <div class="filter-launch">Successful Launch</div>
                         <hr>
-                        <div class="filter-panel-nav">
-                            <div class="w-50">
-                                <div class="button">2006</div>
-                            </div>
-                            <div class="w-50">
-                                <div class="button">2007</div>
+                        <div class="main-row">
+                            <div *ngFor="let success of launchData" class="w-50">
+                                <div class="button">{{success.launch_success}}</div>
                             </div>
                         </div>
                     </div>
@@ -43,9 +40,9 @@
                             <h4>{{data.mission_name}}</h4>
                             <label class="content-desc">Mission Ids</label><span>
                                 <ul>
-                                    <li>test</li>
-                                    <li>tea</li>
-                                    <li>coffee</li>
+                                    <li *ngFor="let data of data.mission_id; let ind=index" [attr.data-index]="ind">
+                                        {{data}}
+                                    </li>
                                 </ul>
                             </span>
                         </div>
@@ -57,7 +54,10 @@
                         <label class="content-desc">Successful Launch:</label><span class="content-prop">{{data.launch_success}}</span>
                     </div>
                     <div>
-                        <label class="content-desc">Successful Landing: </label><span class="content-prop"></span>
+                        <label class="content-desc">Successful Landing: </label>
+                        <span *ngFor="let launchSuccess of data.rocket.first_stage.cores" class="content-prop">
+                            {{launchSuccess.land_success}}
+                        </span>
                     </div>
                 </div>
             </div>

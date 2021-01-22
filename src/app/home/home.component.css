@@ -128,3 +128,8 @@ h4{
     height: 300px; 
   }
   
+
+  .main-row{
+      display: flex;
+      flex-wrap: wrap;
+  }
