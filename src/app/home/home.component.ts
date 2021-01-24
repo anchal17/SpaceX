@@ -23,7 +23,6 @@ export class HomeComponent implements OnInit {
       for(let i in this.launchData){
         if(this.lauchYearData.indexOf(this.launchData[i].launch_year) == -1){
           this.lauchYearData.push(this.launchData[i].launch_year);
-          console.log("result..", this.lauchYearData);
         }
       }
     },err=>{
@@ -32,17 +31,17 @@ export class HomeComponent implements OnInit {
   }
 
   getLauchSuccessData(lauchParam){
-    this.launchParam = lauchParam
-    this.homeService.launchSuccessData(lauchParam).subscribe(res=>{
-      this.launchData = res;
-    })
+    this.launchParam = lauchParam;
+      this.homeService.launchSuccessData(lauchParam).subscribe(res=>{
+        this.launchData = res;
+      })
   }
 
   getLauchAndLandData(lauchParam, landParam){
     if(this.launchParam !== undefined){
       lauchParam = this.launchParam
     }
-    this.landParam = landParam
+    this.landParam = landParam;
     this.homeService.launchAndLandFilteredData(lauchParam, landParam).subscribe(res=>{
       this.launchData = res;
     })
@@ -57,7 +56,6 @@ export class HomeComponent implements OnInit {
     }
     this.homeService.launchLandAndYearFilteredData(lauchParam, landParam, yearParam).subscribe(res=>{
       this.launchData = res;
-      console.log("lauch success", res);
     })
   }
 

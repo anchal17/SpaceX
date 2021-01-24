@@ -1,5 +1,5 @@
 .container{
-    background: lightgray;
+    background: #F0F0F0;
     padding: 10px;
 }
 
@@ -41,7 +41,7 @@ h3{
 }
 
 .content-main{
-    background: lightgray;
+    background: #F0F0F0;
 }
 
 .content-body{
@@ -68,12 +68,12 @@ h4{
 
 .content-desc{
     color:#000000;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 14px;
 }
 
 .content-prop{
-    color: grey;
+    color: #A9A9A9;
 }
 
 .w-50{
@@ -81,7 +81,7 @@ h4{
 }
 
 .button {
-    background-color: #4CAF50;
+    background-color: #c5e1a5;
     border: none;
     color: black;
     padding: 6px -4px;
@@ -96,45 +96,70 @@ h4{
     margin-right: auto;
     margin-left: auto;
     width: 50%;
-  }
+}
 
-  .filter{
-    font-weight: bold;
-  }
+.button:hover {
+    background-color: #8bc34a;
+    border: none;
+    color: black;
+    padding: 6px -4px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
 
-  .filter-panel-nav{
-      display: flex;
-  }
+.light-green {
+    background-color: #c5e1a5;
+}
 
-  .filter-outer{
-      padding: 7px;
-  }
+.dark-green {
+background-color: #8bc34a;
+}
 
-  .filter-launch{
-      text-align: center;
-  }
+.filter{
+font-weight: bold;
+}
 
-  hr{
-    width: 60%;
-    height: 1px;
-    color: #cccccc;
-    background-color: #cccccc;
-  }
+.filter-panel-nav{
+    display: flex;
+}
 
-  .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-    height: 300px; 
-  }
+.filter-outer{
+    padding: 7px;
+}
+
+.filter-launch{
+    text-align: center;
+}
+
+hr{
+width: 60%;
+color: #cccccc;
+background-color: #cccccc;
+}
+
+.column {
+float: left;
+width: 25%;
+padding: 10px;
+height: 300px; 
+}
   
 
-  .main-row{
-      display: flex;
-      flex-wrap: wrap;
-  }
+.main-row{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .content{
         flex-direction: column;
     }
@@ -157,4 +182,4 @@ h4{
         height: 300px;
         width: 100%;
     }
-  }
+}
