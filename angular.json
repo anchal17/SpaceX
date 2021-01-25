@@ -6,7 +6,7 @@
     "spaceX": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
+      "root": "src",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -123,6 +123,6 @@
   },
   "defaultProject": "spaceX",
   "cli": {
-    "analytics": "ceadb9b4-00e6-40ca-a94b-2943c4d69392"
+    "analytics": false
   }
 }
